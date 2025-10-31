@@ -1,4 +1,4 @@
-const display = document.getElementById("displa");
+const display = document.getElementById("display");
 
 function appendToDisplay(input){
     display.value += input;
@@ -8,11 +8,6 @@ function clearDisplay(){
     display.value = "";
 }
 
-function calculator(){
-    try{
-        display.value = eva(display.value);
-    }
-    catch(error){
-        display.value = "Error";
-    }
+function calculate(){
+        display.value = eval(display.value);
 }
